@@ -1,0 +1,31 @@
+x.)
+Osa 1: Run salt locally
+-Lataa sudo apt-get update
+sudo apt-get -y install salt-minion
+-pkg.installed pitäisi olla, kokeile komennolla: sudo salt-call --local -l info state.single pkg.installed tree
+- Tiedostojen hallinta, koska linuks kaikki on text file esimerkki komennot sudo salt-call --local -l info state.single file.managed /tmp/hellotero
+sudo salt-call --local -l info state.single file.managed /tmp/x contents="foo"
+sudo salt-call --local -l info state.single file.absent /tmp/x
+- Mistä näet onko daemon running: käytä service.running/dead apache2 enable=true/false
+- Käyttäjä aktiivisuus user.present/absent x
+- Running command sudo salt-call --local -l info state.single cmd.run 'touch /tmp/foo' creates="/tmp/foo"
+  Ohjeet löytyy: sudo salt-call --local sys.state_doc
+  Lähde: https://terokarvinen.com/2021/salt-run-command-locally/
+
+Osa 2: Sivun luonti Github
+-Luo tai kirjaudu github tilillesi. 
+- Luo uusi repository ja siihen readme, public, description, license(free esim. GNU)
+- Create new file add file kohdasta.
+  Kirjoita ja nimea tiedosto loppuun .md jotta saadaan tiedosto markdowniksi.
+Ohjeet kuinka Markdown toimii ja lähde löytyy osoitteesta: https://terokarvinen.com/2023/create-a-web-page-using-github/
+
+Osa 3: Raportin kirjoittaminen
+
+a.) Saltin asennus salt ladattiin osoitteesta https://docs.saltproject.io/salt/install-guide/en/latest/topics/downloads.html#windows
+Latauksen jälkeen varmistettiin että Salt on onnistuneesti koneella. 
+kuva 1
+
+b.) Vagrantin kanssa kohtasin vaikeuksia. En ollut varma enkä oikein käsittänyt kuinka vagrantin avulla luodaan vartuaalikone. 
+  Yritin käyttää apunani lähdettä https://www.educative.io/courses/guide-to-vagrant-virtual-machines/building-your-first-vm-with-vagrant
+kuva 2. Latasin vagrantin Windows koneelleni 
+  
