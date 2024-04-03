@@ -72,7 +72,7 @@ Total states run:     1
 Tällä toiminnolla asennettiin paketti(package: tree)
 
 2. file managed: 
-salt-call --local -l info state.single file.managed/tmp/hellotero
+salt-call --local -l info state.single file.managed/tmp/kayttaja
 [INFO    ] Determining pillar cache
 
 Passed invalid arguments: single() takes at least 2 arguments (1 given).
@@ -122,7 +122,7 @@ Total states run:     1
 Tämä ei siis onnistunu kokeilen vielä uudestaan, mutta pohdintana enable=true laittaa päälle enable=false sulkee.
 
 4. Käyttäjä
- salt-call --local -l info state.single user.present käyttäjä
+ salt-call --local -l info state.single user.present kayttaja
 [INFO    ] Determining pillar cache
 [INFO    ] Determining pillar cache
 [INFO    ] Loading fresh modules for state activity
@@ -197,8 +197,9 @@ Succeeded: 1 (changed=1)
 Failed:    0
 ------------
 Total states run:     1
-
-d. Salt grains komento output: 
+# Idempotenssi 
+Tarkoittaa funkiota jolla saadaan samatulos, Esimerkki:  sudo salt-call --local -l info state.single cmd.run 'touch /tmp/foo' creates="/tmp/foo". Samalla saadaan samatulos. 
+# d. Salt grains komento output: 
  sudo salt-call --local grains.items osfinger virtual
 [INFO    ] Determining pillar cache
 
