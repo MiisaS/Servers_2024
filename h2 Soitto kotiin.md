@@ -184,6 +184,8 @@ Linkki käyttämääni ohjeeseen: https://medium.com/@srghimire061/how-to-create
 
 Tässä mitä muokkasin notepadille: 
 
+![Sieppaatestiversio2](https://github.com/MiisaS/Servers_2024/assets/122888617/c3a9e333-092f-46ef-a4fa-659806cdd9d1)
+
 Ja sitten kokeilin vagrant up ja katsoin vielä vagrant statuksesta onko mitään tapahtunut eikä ollut.
 
 Lähteet: 
