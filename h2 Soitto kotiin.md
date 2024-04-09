@@ -147,7 +147,8 @@ service
 user
 cmd (only if the four others can't be used)
 
-# a.) Kahden virtuaalikoneen luonti samaan verkkoon.
+# a.) Kahden virtuaalikoneen luonti samaan verkkoon. 
+## Huom! Ongelmat alkavat jo tässä ensimmäisesä vaiheessa, joten loput puuttuvat lisään ne ongelmien ratkettua. (Omat googlailut ja tietotaitoni eivät riittäneet. :( )
 Aloitin käynnistämällä virtuaalikoneeni ja luomalla tiedoston.
 ![Sieppaatwohostfile](https://github.com/MiisaS/Servers_2024/assets/122888617/75ac1b77-5c8d-4a57-9eba-a3fdac77240f)
 
@@ -160,7 +161,8 @@ ja tiedosto näytti mielestäni vain tekstiltä, joten muistelin aikasemmin teke
 Tämän jälkeen tiedoston sisältö näytti enemmän oikealta, mutta kohtasin uuden ongelman:
 ![Sieppaaongelma2](https://github.com/MiisaS/Servers_2024/assets/122888617/26e29f69-6d6d-445f-8e31-37faf5aada9a)
 
-Kokeilin uudestaan käyttäen Bash
+Kokeilin uudestaan käyttäen Bash:
+![Sieppaabashillatoimi](https://github.com/MiisaS/Servers_2024/assets/122888617/81c451c8-c412-486f-b856-3410ea8a74f8)
 
 Vagrantfile.sh: line 6: =: command not found
 Vagrantfile.sh: line 14: syntax error near unexpected token `"2"'
@@ -170,12 +172,15 @@ Sain tälläiset lähdin katsomaan missä vika. Huomasin, että tiedoston ei tar
 Kokeilin tehdä muutamia muutoksia tiedostoon un huomasin esimerkiksi puuttuneet hipsut, sekä poistin $ merkin kokeilun omaiseksi eikä virhe ilmoitukset poistuneet. 
 Tässä tiedostoni sisältö:
 
+![Sieppaamuutettu script](https://github.com/MiisaS/Servers_2024/assets/122888617/b082e7b0-adac-48cb-a005-ca9104802e38)
+
 ... Päivitän versiota ongelman ratketessa.
 
 Lähteet: 
 https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/
 https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux
 https://terokarvinen.com/2024/hello-salt-infra-as-code/
+https://www.cyberciti.biz/faq/run-execute-sh-shell-script/
 
 
 
