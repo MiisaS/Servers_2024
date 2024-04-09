@@ -188,6 +188,12 @@ Tässä mitä muokkasin notepadille:
 
 Ja sitten kokeilin vagrant up ja katsoin vielä vagrant statuksesta onko mitään tapahtunut eikä ollut.
 
+Kokeilin vielä kerran luoda kaiken alusta luoda kahemistot ja file:n. Enkä saanut toimimaan.
+Jotain on kuitenkin tehty oikein sillä kun laittoi: Vagrant up tuli tulostukseksi tämä: 
+
+![Sieppaaviimeinenkokeilu](https://github.com/MiisaS/Servers_2024/assets/122888617/8af7e98c-299d-4785-a77c-5c0cda3e2937)
+
+
 Lähteet: 
 https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/
 https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux
