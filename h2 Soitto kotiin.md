@@ -173,6 +173,9 @@ Kokeilin tehdä muutamia muutoksia tiedostoon un huomasin esimerkiksi puuttuneet
 Tässä tiedostoni sisältö:
 
 ![Sieppaamuutettu script](https://github.com/MiisaS/Servers_2024/assets/122888617/b082e7b0-adac-48cb-a005-ca9104802e38)
+Huomasin yhden oppilaista muokanneen notepad tiedostoa ja tajusin sen ehkä olevan oikea keino kun käytän windowsia. Kokeilin uudestaan ja suljin Vagrantin, päivitin Vagrantfile:n notepadissa. Tämän jälkeen käynnistin uudelleen Vagrant up. 
+Katsoin käynnissä olevat: Vagrant status komennolla.
+
 
 ... Päivitän versiota ongelman ratketessa.
 
