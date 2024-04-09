@@ -153,13 +153,29 @@ Aloitin käynnistämällä virtuaalikoneeni ja luomalla tiedoston.
 
 Tiedoston sisältö:
 ![Sieppaatiedosto](https://github.com/MiisaS/Servers_2024/assets/122888617/8805b9d7-7aae-4816-afbf-079aa54bfa1c)
-Komennot eivät toimineet ja tiedosto näytti mielestäni vain tekstiltä, joten muistelin aikasemmin tekemissäni scripteissä käyttäneeni .sh tiedostomuotoa. Kokeilin siis sitä
+Komennot eivät toimineet:
+![Sieppaaongelmat](https://github.com/MiisaS/Servers_2024/assets/122888617/b1b12ae6-4bb3-487e-9ec2-125650bd389b)
+ja tiedosto näytti mielestäni vain tekstiltä, joten muistelin aikasemmin tekemissäni scripteissä käyttäneeni .sh tiedostomuotoa. Kokeilin siis sitä
 
 Tämän jälkeen tiedoston sisältö näytti enemmän oikealta, mutta kohtasin uuden ongelman:
 ![Sieppaaongelma2](https://github.com/MiisaS/Servers_2024/assets/122888617/26e29f69-6d6d-445f-8e31-37faf5aada9a)
-Tässä vielä yleinen kuva mitä tein: 
-![Sieppaayleiskuva](https://github.com/MiisaS/Servers_2024/assets/122888617/41c29d11-bcb1-449e-9c1f-cb94f4cf4375)
 
+Kokeilin uudestaan käyttäen Bash
+
+Vagrantfile.sh: line 6: =: command not found
+Vagrantfile.sh: line 14: syntax error near unexpected token `"2"'
+Vagrantfile.sh: line 14: `Vagrant.configure("2") do |config|'
+
+Sain tälläiset lähdin katsomaan missä vika. Huomasin, että tiedoston ei tarvitsekkaan olla .sh mutta sain silti samat virheet.
+Kokeilin tehdä muutamia muutoksia tiedostoon un huomasin esimerkiksi puuttuneet hipsut, sekä poistin $ merkin kokeilun omaiseksi eikä virhe ilmoitukset poistuneet. 
+Tässä tiedostoni sisältö:
+
+... Päivitän versiota ongelman ratketessa.
+
+Lähteet: 
+https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/
+https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux
+https://terokarvinen.com/2024/hello-salt-infra-as-code/
 
 
 
