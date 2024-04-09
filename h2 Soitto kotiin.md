@@ -148,7 +148,7 @@ user
 cmd (only if the four others can't be used)
 
 # a.) Kahden virtuaalikoneen luonti samaan verkkoon. 
-## Huom! Ongelmat alkavat jo tässä ensimmäisesä vaiheessa, joten loput puuttuvat lisään ne ongelmien ratkettua. (Omat googlailut ja tietotaitoni eivät riittäneet. :( )
+## Huom! Ongelmat alkavat jo tässä ensimmäisesä vaiheessa, joten loput puuttuvat lisään ne ongelmien ratkettua. (Omat googlailut ja tietotaitoni eivät riittäneet. :( ) Ongelma ratkaistu 9.4.2024 klo.21.18. Ongelman ratkaisussa ja tehtävän alkuosiossa kesti yhteensä n. 12h.  
 Aloitin käynnistämällä virtuaalikoneeni ja luomalla tiedoston.
 ![Sieppaatwohostfile](https://github.com/MiisaS/Servers_2024/assets/122888617/75ac1b77-5c8d-4a57-9eba-a3fdac77240f)
 
@@ -193,6 +193,8 @@ Jotain on kuitenkin tehty oikein sillä kun laittoi: Vagrant up tuli tulostuksek
 
 ![Sieppaaviimeinenkokeilu](https://github.com/MiisaS/Servers_2024/assets/122888617/8af7e98c-299d-4785-a77c-5c0cda3e2937)
 
+Ongelman ratkaisuksi selvisi tiedoston päällekkäisyys saman kaltainen kuin tässä tilanteessa:
+https://stackoverflow.com/questions/33294269/unable-to-create-new-virtual-machine-unsing-vagrant
 
 Lähteet: 
 https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/
