@@ -179,12 +179,18 @@ Katsoin käynnissä olevat: Vagrant status komennolla.
 
 ... Päivitän versiota ongelman ratketessa.
 
+Kokeilin vielä verkosta löytämääni ohjetta joka on hyvin saman kaltainen kylläkin kuin Teron. 
+Linkki käyttämääni ohjeeseen: https://medium.com/@srghimire061/how-to-create-multiple-virtual-machines-using-vagrant-tool-d4b074d5bdcc 
+Tässä mitä muokkasin notepadille: 
+
+Ja sitten kokeilin vagrant up ja katsoin vielä vagrant statuksesta onko mitään tapahtunut eikä ollut.
+
 Lähteet: 
 https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/
 https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux
 https://terokarvinen.com/2024/hello-salt-infra-as-code/
 https://www.cyberciti.biz/faq/run-execute-sh-shell-script/
-
+https://medium.com/@srghimire061/how-to-create-multiple-virtual-machines-using-vagrant-tool-d4b074d5bdcc
 
 
 
