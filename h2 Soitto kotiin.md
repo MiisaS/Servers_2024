@@ -1,4 +1,4 @@
-## H2 Soittokotiin
+## H2 Soittokotiin keskeneräinen!! Palautin koska tarvitsen apua muiden palautuksista koska ongelmani eivät ratkenneet yksin
 # x.)
 # Two machine virtual network with Debian 11 Bullseye and vagrant
 
@@ -147,6 +147,8 @@ service
 user
 cmd (only if the four others can't be used)
 
+# a.) Kahden virtuaalikoneen luonti samaan verkkoon.
+Aloitin käynnistämällä virtuaalikoneeni ja luomalla tiedoston.
 
 
 
