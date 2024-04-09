@@ -181,6 +181,7 @@ Katsoin käynnissä olevat: Vagrant status komennolla.
 
 Kokeilin vielä verkosta löytämääni ohjetta joka on hyvin saman kaltainen kylläkin kuin Teron. 
 Linkki käyttämääni ohjeeseen: https://medium.com/@srghimire061/how-to-create-multiple-virtual-machines-using-vagrant-tool-d4b074d5bdcc 
+
 Tässä mitä muokkasin notepadille: 
 
 Ja sitten kokeilin vagrant up ja katsoin vielä vagrant statuksesta onko mitään tapahtunut eikä ollut.
