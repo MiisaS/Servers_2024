@@ -149,6 +149,17 @@ cmd (only if the four others can't be used)
 
 # a.) Kahden virtuaalikoneen luonti samaan verkkoon.
 Aloitin käynnistämällä virtuaalikoneeni ja luomalla tiedoston.
+![Sieppaatwohostfile](https://github.com/MiisaS/Servers_2024/assets/122888617/75ac1b77-5c8d-4a57-9eba-a3fdac77240f)
+
+Tiedoston sisältö:
+![Sieppaatiedosto](https://github.com/MiisaS/Servers_2024/assets/122888617/8805b9d7-7aae-4816-afbf-079aa54bfa1c)
+Komennot eivät toimineet ja tiedosto näytti mielestäni vain tekstiltä, joten muistelin aikasemmin tekemissäni scripteissä käyttäneeni .sh tiedostomuotoa. Kokeilin siis sitä
+
+Tämän jälkeen tiedoston sisältö näytti enemmän oikealta, mutta kohtasin uuden ongelman:
+![Sieppaaongelma2](https://github.com/MiisaS/Servers_2024/assets/122888617/26e29f69-6d6d-445f-8e31-37faf5aada9a)
+Tässä vielä yleinen kuva mitä tein: 
+
+
 
 
 
