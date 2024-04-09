@@ -158,6 +158,8 @@ Komennot eivät toimineet ja tiedosto näytti mielestäni vain tekstiltä, joten
 Tämän jälkeen tiedoston sisältö näytti enemmän oikealta, mutta kohtasin uuden ongelman:
 ![Sieppaaongelma2](https://github.com/MiisaS/Servers_2024/assets/122888617/26e29f69-6d6d-445f-8e31-37faf5aada9a)
 Tässä vielä yleinen kuva mitä tein: 
+![Sieppaayleiskuva](https://github.com/MiisaS/Servers_2024/assets/122888617/41c29d11-bcb1-449e-9c1f-cb94f4cf4375)
+
 
 
 
