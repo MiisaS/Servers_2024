@@ -133,12 +133,14 @@ ls /tmp/esimerkki
 /tmp/esimerkki
 
 ## Varmistus komento 
+```
 sudo salt-call --local state.apply hello
 ...
 Succeeded: 1
 sudo salt-call --local state.apply hello
 ...
 Succeeded: 1
+```
 
 ## Tärkeät perus funktiot
 pkg
@@ -164,9 +166,11 @@ Tämän jälkeen tiedoston sisältö näytti enemmän oikealta, mutta kohtasin u
 Kokeilin uudestaan käyttäen Bash:
 ![Sieppaabashillatoimi](https://github.com/MiisaS/Servers_2024/assets/122888617/81c451c8-c412-486f-b856-3410ea8a74f8)
 
+```
 Vagrantfile.sh: line 6: =: command not found
 Vagrantfile.sh: line 14: syntax error near unexpected token `"2"'
 Vagrantfile.sh: line 14: `Vagrant.configure("2") do |config|'
+```
 
 Sain tälläiset lähdin katsomaan missä vika. Huomasin, että tiedoston ei tarvitsekkaan olla .sh mutta sain silti samat virheet.
 Kokeilin tehdä muutamia muutoksia tiedostoon un huomasin esimerkiksi puuttuneet hipsut, sekä poistin $ merkin kokeilun omaiseksi eikä virhe ilmoitukset poistuneet. 
@@ -195,14 +199,99 @@ Jotain on kuitenkin tehty oikein sillä kun laittoi: Vagrant up tuli tulostuksek
 
 Ongelman ratkaisuksi selvisi tiedoston päällekkäisyys saman kaltainen kuin tässä tilanteessa:
 https://stackoverflow.com/questions/33294269/unable-to-create-new-virtual-machine-unsing-vagrant
+Loin koneet
+![Sieppaakaksikonetta](https://github.com/MiisaS/Servers_2024/assets/122888617/63ee2c6c-4e6c-4edd-8527-a4589f72a917)
+Kokeilin yhteydet:
+![Sieppaapingt001](https://github.com/MiisaS/Servers_2024/assets/122888617/d532b807-64bf-4912-8055-332253ce66c9)
+![Sieppaaping002](https://github.com/MiisaS/Servers_2024/assets/122888617/ed4d3543-eedd-4dc8-86c7-94236465c943)
+
+## B.) Salt Master-Slave, Kulunut aika n. 15min
+Tein t001 masterin:
+![Sieppaamasteriksi](https://github.com/MiisaS/Servers_2024/assets/122888617/c4c220b2-9520-436c-ba88-9230c8fc91cb)
+Tein t002 minionin:
+![Sieppaasaltminion](https://github.com/MiisaS/Servers_2024/assets/122888617/97a7ca2c-a90a-41ae-b736-d2aa58b04e72)
+Muokkasin tiedoston, jotta minion tunnistaisi herransa.
+![Sieppaaminionilleherra](https://github.com/MiisaS/Servers_2024/assets/122888617/d9fa84f8-6f8e-43cd-92f4-c39418a38c07)
+Avainta ei aluksi löytynyt, Sain ilmoituksen:
+```
+$ sudo salt-key -A
+$ The key glob '*' does not match any unaccepted keys.
+```
+Tarkistin masterin IP osoitteen komennolla, joka olisi kannattanut tehdä jo ennen, koska virheeni oli laittamassani ip-osoitteessa.
+```
+hostname -I
+```
+![Sieppaavarmistukset](https://github.com/MiisaS/Servers_2024/assets/122888617/fc026cb0-c7cb-4dd0-b8df-d86195320c79)
+
+## C.) Shell commands with slave, Kulunut aika n. 10min
+Käytin komentoa
+```
+sudo salt 'miisa' cmd.run 'ls -l'
+
+```
+
+![Sieppaahakemistollashellkomento](https://github.com/MiisaS/Servers_2024/assets/122888617/ab246c9c-0c88-48fd-9ef9-72751d4d4038)
+
+## D.) Idempontti, Kulunut aika n. 30min
+Kokeilin eka idemponttia jossa luon saman tiedoston kaksi kertaa.
+![Sieppaatestitiedosto](https://github.com/MiisaS/Servers_2024/assets/122888617/11f0ab77-6ba6-44eb-80e1-dbc527c4c4e1)
+Sitten kokeilin ladata httpie kaksi kertaa
+```
+sudo salt '*' pkg.install httpie
+
+```
+
+![Sieppaatodistetaanettäeiuutta](https://github.com/MiisaS/Servers_2024/assets/122888617/ba1a3008-a251-4344-a7a5-8ae2cae1e23d)
+
+## E Grains.Item, Kulunut aika n. 10min
+Käytin eka komentoa jolla saadaan kaikki minionin tekniset tiedot
+```
+sudo salt 'miisa' grains.items
+```
+Tämän jälkeen poimin muutamat tiedot tällä kertaa os ja ipv4, ipv6.
+
+![Sieppaajyviä](https://github.com/MiisaS/Servers_2024/assets/122888617/368a4bd5-af8e-4da1-a7e3-4b4f07123816)
+
+## Hello IaC 
+Aloitin tehtävän asentamalla micro-editorin. 
+```
+sudo apt-get -y install micro
+export EDITOR=micro
+```
+Loin kansion ja tiedoston moi
+
+```
+$ sudo mkdir -p /srv/salt/moi/
+$ cd /srv/salt/moi/
+```
+Kun olin siirtynyt oikeaan kansioon suoritin komennon:
+
+```
+sudoedit init.sls
+```
+Kirjoitin idempontin tiedostoon, en osannut aluksi sulkea editoria mutta se tapahtuikin Ctrl+Q (Ctrl+s) tallentaa tiedoston.
+Tämä ei kuitenkaan toiminut kun yritin ajaa komennon.
+```
+sudo salt-call --local state.apply moi
+```
+![Sieppaaeitääoikeetoiminu](https://github.com/MiisaS/Servers_2024/assets/122888617/bec1bdcf-93c1-4d6b-954d-9b5129e7ed7c)
+
+
 
 Lähteet: 
+
 https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/
-https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux
+
+https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?
+fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux
+
 https://terokarvinen.com/2024/hello-salt-infra-as-code/
+
 https://www.cyberciti.biz/faq/run-execute-sh-shell-script/
+
 https://medium.com/@srghimire061/how-to-create-multiple-virtual-machines-using-vagrant-tool-d4b074d5bdcc
 
+https://github.com/bhd471/Palvelinten-hallinta/blob/main/h2-Soitto-kotiin.md
 
 
 
