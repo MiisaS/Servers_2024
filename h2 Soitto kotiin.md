@@ -1,4 +1,5 @@
-## H2 Soittokotiin keskeneräinen!! Palautin koska tarvitsen apua muiden palautuksista koska ongelmani eivät ratkenneet yksin
+## H2 Soittokotiin
+Palautettiin ajoissa keskeneräisenä ongelmien vuoksi. Ongelmat ratkesivat ja versiota on päivitetty. 
 # x.)
 # Two machine virtual network with Debian 11 Bullseye and vagrant
 
@@ -255,7 +256,7 @@ Tämän jälkeen poimin muutamat tiedot tällä kertaa os ja ipv4, ipv6.
 
 ![Sieppaajyviä](https://github.com/MiisaS/Servers_2024/assets/122888617/368a4bd5-af8e-4da1-a7e3-4b4f07123816)
 
-## Hello IaC 
+## f.) Hello IaC 
 Aloitin tehtävän asentamalla micro-editorin. 
 ```
 sudo apt-get -y install micro
