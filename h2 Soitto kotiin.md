@@ -199,9 +199,12 @@ Jotain on kuitenkin tehty oikein sillä kun laittoi: Vagrant up tuli tulostuksek
 
 Ongelman ratkaisuksi selvisi tiedoston päällekkäisyys saman kaltainen kuin tässä tilanteessa:
 https://stackoverflow.com/questions/33294269/unable-to-create-new-virtual-machine-unsing-vagrant
-Loin koneet
+Loin koneet:
+
 ![Sieppaakaksikonetta](https://github.com/MiisaS/Servers_2024/assets/122888617/63ee2c6c-4e6c-4edd-8527-a4589f72a917)
+
 Kokeilin yhteydet:
+
 ![Sieppaapingt001](https://github.com/MiisaS/Servers_2024/assets/122888617/d532b807-64bf-4912-8055-332253ce66c9)
 ![Sieppaaping002](https://github.com/MiisaS/Servers_2024/assets/122888617/ed4d3543-eedd-4dc8-86c7-94236465c943)
 
