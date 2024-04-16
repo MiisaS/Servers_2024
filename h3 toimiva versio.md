@@ -37,5 +37,9 @@ Lähde: https://git-scm.com/docs/git-push
  sen sovitettua yhteen.
 Lähde: https://git-scm.com/docs/git-pullt
 
+## Varaston terokarvinen/suolax/ historia
+Viimesimpinä muutoksina on viime viikolla tehdyt 
+
+
 
 
