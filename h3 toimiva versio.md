@@ -129,7 +129,10 @@ git config --global user.name "päivitettynimi"
 Myös sähköposti muutetaan samalla komennolla korvataan vain user.name, user.email ja hakasulkuihin kirjoitetaan uusi sähköpostisi.
 
 ## Suolattu rakki, Salt
-Tätä en oikein tajunnut tai saanut toimimaan. En löytänyt salt hakemistoani.
+Tätä en oikein tajunnut tai saanut toimimaan. En löytänyt salt hakemistoani. 
+
+
+
 
 Lähteet: 
 https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/
