@@ -1,4 +1,6 @@
 # h4 Demoni
+Ympäristö: Yleensä tehtävät suoritetaan Linux debian tai ubuntu ympäristössä, unohdin kirjautumistunnukseni testiympäristööni, joten tällä viikolla tehtäviä suoritettiin Windows 10, joka lisäsikin vaikeuksia.
+Tehtävien teossa käytetään Lenovon thinkpadia ja lisä näyttöä.
 # x.) Lue ja tiivistä
 ## Salt vagrant
 - Infra as Code - Your wishes as a text file
@@ -116,7 +118,7 @@ salt-call --local state.apply
 Tämä ei ihan toiminut veikkaan Saltissani tai komennossa olleen jotain häikkää. 
 
 ## c. Apache easy mode
-(Tässä kohtaa on hyödynnetty Chatgpt 4, jotta saatiin suoritettua windowsilla)
+(Tässä kohtaa on hyödynnetty Chatgpt 4 ongelmanratkaisussa, jotta saataisiin suoritettua windowsilla)
 Tässä kohtaa asennamme Apachen, korvaamme testisivun ja käynnistämme sen.
 ```
 notepad C:\srv\salt\apache.sls
@@ -131,6 +133,25 @@ salt-call --local state.apply apache
 Webselaimeen kirjoitetaan localhost. Oletuksena tehtyjen muutoksien jälkeen apachen testisivu on nyt korvattu. Itsellä en saanut yhteyttä localhost sivulle.
 
 ## d. SSHouto, uuden portin luominen SSHd kuuluviin.
+(SSH toimii kehnosti windowsillani koitan uudelleen asennella ja kokeilla uudelleen)
 
+Avattin SSH:n asennustiedosto sshd_config, Muokattiin portti määritykseen: 2222.
+Tallennetaan ja luodaan uusi tiedosto.
+Luotiin tiedosto sshd.sls salt hakemistoon.
+```
+notepad C:\srv\salt\sshd.sls
+```
+Kirjoitettiin tiedostoon(tästä sisällöstä olen hieman epävarma):
+![Sieppaah4epävarmuus](https://github.com/MiisaS/Servers_2024/assets/122888617/01df2650-a132-4537-8a11-db9a4a124472)
+Tallentamisen jälkeen, tilamuutos suoritetaan komennolla.
+```
+salt-call --local state.apply sshd
+```
 
-
+Lähteet: 
+https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml
+https://terokarvinen.com/2024/configuration-management-2024-spring/
+https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file
+https://geekrewind.com/how-to-set-up-ssh-key-login-with-windows-11/
+https://chat.openai.com/
+ https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh
