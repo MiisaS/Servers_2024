@@ -24,3 +24,4 @@ salt-call --local
 ![Sieppaasaltcallocal](https://github.com/MiisaS/Servers_2024/assets/122888617/eaf6a96a-f4ba-48bb-b2f5-ee928f4fb21d)
 ## Tiedon keruu
 Seuraavaksi keräsimme tietoa grains.item-toiminnolla.
+Käytin komentoa: salt-call --local grains.items, joka on toiminut aikaisemmin. Veikkaan että vika on oikeuksissani.
