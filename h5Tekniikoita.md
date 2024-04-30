@@ -22,6 +22,17 @@ Asennus näytettiin komennolla:
 salt-call --local
 ```
 ![Sieppaasaltcallocal](https://github.com/MiisaS/Servers_2024/assets/122888617/eaf6a96a-f4ba-48bb-b2f5-ee928f4fb21d)
+
 ## Tiedon keruu
 Seuraavaksi keräsimme tietoa grains.item-toiminnolla.
-Käytin komentoa: salt-call --local grains.items, joka on toiminut aikaisemmin. Veikkaan että vika on oikeuksissani.
+Käytin komentoa: salt-call --local grains.items, joka on toiminut aikaisemmin. Veikkaan että vika on oikeuksissani. Komento ei löydä polkua.
+![Sieppaasalteitoimi](https://github.com/MiisaS/Servers_2024/assets/122888617/b5358642-4009-4625-9b23-e1f5fc569f47)
+
+Päädyinkin laittamaan Salt ympäristöni uudestaan pystyyn. Katsoin ohjeita sivustolta:
+https://docs.saltproject.io/salt/install-guide/en/latest/topics/start-salt-services.html#start-salt-services
+ja Teron ohjeita:
+https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux
+Tähän mennessä ongelman ratkaisuun on kulut n. 2h ja koin tämän helpoimmaksi keinoksi. Kertaus on myös opintojen äiti:)
+
+
+
