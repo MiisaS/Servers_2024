@@ -34,5 +34,25 @@ ja Teron ohjeita:
 https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux
 Tähän mennessä ongelman ratkaisuun on kulut n. 2h ja koin tämän helpoimmaksi keinoksi. Kertaus on myös opintojen äiti:)
 
+Salt minion ja master on luotu ja salt-minion on paused tilassa.
 
+![Sieppaalupaavaltanäyttää](https://github.com/MiisaS/Servers_2024/assets/122888617/b0f6bf77-7dd8-45ef-83f8-5601734ac173)
+
+En saanut käynnistettyä start minionia.
+![Sieppaaeimeepäälle](https://github.com/MiisaS/Servers_2024/assets/122888617/0c1c7237-df17-43fa-b766-3b99dae14ba4)
+
+
+## Ongelman päivitys:
+Ongelmaa ei ole saatu ratkottua. Salt on kokeiltu ladata uudestaan ja windows näyttää ladatun salt minionin. Jostain syystä haluttu Programfile ei löydy/aukea. Vaikka käytettäysiin administratoria.
+![Uusiyritys](https://github.com/MiisaS/Servers_2024/assets/122888617/029080b3-754c-459c-8eff-9300068d7812)
+
+Tässä kuva ilmoituksesta:
+![SieppaaEitääsalttoimi](https://github.com/MiisaS/Servers_2024/assets/122888617/58426e7b-9bee-4501-be46-8fc8e916a351)
+
+Ongelmanratkaisuun on hyödynnetty saltin verkkosivuja ja Teron materiaaleja.
+
+Lähteet: 
+https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/windows.html#install-windows
+https://terokarvinen.com/2024/configuration-management-2024-spring/
+https://terokarvinen.com/2018/control-windows-with-salt/
 
