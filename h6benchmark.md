@@ -72,4 +72,17 @@ Tässä vielä muista yrityksistä. Yritin myös ladata winrar ja sen lopputulos
 <img width="366" alt="Näyttökuva 2024-05-06 211239latausyrityksiä,winrarnäyttääeriltä" src="https://github.com/MiisaS/Servers_2024/assets/122888617/2763a546-3107-4a21-a686-268168cb8140">
 
 ## Benchmark
-Löysin minua kiinnostavaksi 
+
+1. Kristion Koponen Omamoduli, vuonna 2020. Palvelintenhallinta kurssille.
+  Lähde: https://kopkr.github.io/task-palhal/pages/h7.html#h7a1
+Projektissaan Kristian luo omanpalvelimen peliä varten. Pelinä toimii Terraria. Mielestäni aihe oli hyvä ja hyödyllinen, koska oma palvelin tietylle ohjelmalle voi olla erittäin hyödyllinen. Tällä kertaa ohjelmana toimi peli. Koen että oma palvelin pelille mahdollistaa sen tehokkaamman ja helpomman hallinnan. Sama koskee jos asennettavana ohjelmistona olisi ollut jokin muukin.
+
+Lisenssi oli minulle vaikea löytää. Tämä johtui sivun ulkoasusta joka on hyvin siisti. Eli näkyvillä on vain Harjoitukset. (En löytänyt käytössä olevaa lisenssiä). Oletuksena on että on käytetty GNU-PL 3, koska tehtävä on tehty palvelintenhallinta kurssille, missä pääsääntöisesti ohjataan valitsemaan se lisenssiksi. Tämä kyseinen lisenssi antaa vapauden käyttää lähdekoodia omiin tarpeisiisi vapaasti.
+
+Tekijänä on toiminut Kristian Koponen ja mooduuli on tehty vuonna 2020.
+
+Mielestäni tehtävä oli kokonaisuudessa kiinnostava. Mutta erityisesti oli mielenkiintoista nähdä vaihevaiheelta kuinka peli saadaan pyörimään palvelimelle.
+
+2. 
+
+
