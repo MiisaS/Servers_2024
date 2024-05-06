@@ -1,5 +1,5 @@
 # H6 Benchmark 
-## (tehtävän loppu osiot tehdään loppuun hieman myöhemmin. Johtuen liian myöhään ratkenneesta salt ongelmasta. Aika tulee vastaan:( )
+## (tehtävän testbench osio tehdään loppuun hieman myöhemmin. Johtuen liian myöhään ratkenneesta salt ongelmasta. Aika tulee vastaan:( )
 
 ## Lue ja tiivistä
 Windows package manager:
@@ -43,7 +43,7 @@ pkg.remove
 Lähde: 
 https://docs.saltproject.io/en/latest/topics/windows/windows-package-manager.html
 
-# Paketin lataus windowsiin.
+## Paketin lataus windowsiin.
 Hyödynsin tässä tehtävässä ongelmantultua Nicklaksen palautusta, koska hän osasi asian ja selitti hyvin tekemänsä vaiheet.
 Linkki Nicklaksen Gittiin: https://github.com/NicklasHH/Palvelinten-hallinta/blob/master/h6%20Benchmark/h6%20Benchmark.md
 
@@ -73,16 +73,40 @@ Tässä vielä muista yrityksistä. Yritin myös ladata winrar ja sen lopputulos
 
 ## Benchmark
 
-1. Kristion Koponen Omamoduli, vuonna 2020. Palvelintenhallinta kurssille.
-  Lähde: https://kopkr.github.io/task-palhal/pages/h7.html#h7a1
-Projektissaan Kristian luo omanpalvelimen peliä varten. Pelinä toimii Terraria. Mielestäni aihe oli hyvä ja hyödyllinen, koska oma palvelin tietylle ohjelmalle voi olla erittäin hyödyllinen. Tällä kertaa ohjelmana toimi peli. Koen että oma palvelin pelille mahdollistaa sen tehokkaamman ja helpomman hallinnan. Sama koskee jos asennettavana ohjelmistona olisi ollut jokin muukin.
+1. Kristian Koponen Omamoduli, vuonna 2020. Palvelintenhallinta kurssille.
+
+Projektissaan Kristian luo omanpalvelimen peliä varten. Pelinä toimii Terraria. Mielestäni aihe oli    hyvä ja hyödyllinen, koska oma palvelin tietylle ohjelmalle voi olla erittäin hyödyllinen. Tällä kertaa ohjelmana toimi peli. Koen että oma palvelin pelille mahdollistaa sen tehokkaamman ja helpomman hallinnan. Sama koskee jos asennettavana ohjelmistona olisi ollut jokin muukin.
 
 Lisenssi oli minulle vaikea löytää. Tämä johtui sivun ulkoasusta joka on hyvin siisti. Eli näkyvillä on vain Harjoitukset. (En löytänyt käytössä olevaa lisenssiä). Oletuksena on että on käytetty GNU-PL 3, koska tehtävä on tehty palvelintenhallinta kurssille, missä pääsääntöisesti ohjataan valitsemaan se lisenssiksi. Tämä kyseinen lisenssi antaa vapauden käyttää lähdekoodia omiin tarpeisiisi vapaasti.
 
 Tekijänä on toiminut Kristian Koponen ja mooduuli on tehty vuonna 2020.
+Riippuvuudet kyseiseen tehtävään on: Liux palvelin, koska Terrarian virallisilla sivuillakin olevat etäpalvelimen käyttöönottoon liittyvät ohjeet on tehty Linuxilla. Koen myös että linuxin kanssa ongelmat selviävät helpommin, koska moni käyttää sitä hallinnassa.
 
 Mielestäni tehtävä oli kokonaisuudessa kiinnostava. Mutta erityisesti oli mielenkiintoista nähdä vaihevaiheelta kuinka peli saadaan pyörimään palvelimelle.
 
-2. 
+Lähde: https://kopkr.github.io/task-palhal/pages/h7.html#h7a1
 
+2. Linux opettelua, Jussi Pelkonen
+   Työssä oli haluttu luoda useita orjia, joille asennettaisiin eri ohjelmistoja. Koen että tekijä halusi tehdä esimerkin miten voisi luoda palvelin työympäristön. Kun yksi palvelin avattiasi aukeisi automaattisesti kotisivu. Idea oli kasvanut projektin edetessä ja oli koitettu käyttää myös squiddi proxypalvelimeksi. Squid ei ole itselleni tuttu.
 
+Lisenssinä oli käytetty:
+
+Tekijä: Jussi Pelkonen, vuonna 2020. Tehtävä on tehty linux kurssille.
+
+Valitsin kyseisen tehtävän koska thetävässä oli tullut ongelmia. Virheistä oppii eniten ja vaikka suunniteltua lopputulosta ei oltu saatu luotua, koen että raportista voisi silti oppia, jotakin. Tehtävässä oli haluttu kokeilla Saltin käyttöä windowsilla. Jonka kanssa itsellänikin on ollut ongelmia. 
+
+Riippuvuus tehtävän suorittamiseen on: salt ja sen toimiminen Windowsilla.
+Kuten Jussikin kirjotuksessaan sanoo, ei hänen ratkaisunsa ole hirväen käytännöllinen tietoturvariskien vuoksi. Olen itsekkin samaa mieltä ja siksi kehityskohteeksi voisi moduuliin keksiä jonkun tietoturvaa parantavan lisän.
+
+Lähde: https://pelkjus.wordpress.com/2020/05/17/tehtava-7-oma-moduli/#respond
+
+3. Työ
+
+## Testbench (kesken en ole vielä löytänyt tehtävää jonka koen pystyväni suorittaa)
+
+## Viisi ideaa
+- Toimiva palvelin, hyödnytäen salttia.
+- Ajattelin yrittää tehdä lapsiystävällisen palvelimen
+- Oikeudet rajatut esimerkiksi. joihinkin selaimella ei saisi sivuja auki.
+- Jotain lapsiystävällistä sisältöä(esim piirtämiseen tarkoitettu sovellus), muuta Mitä?
+- Haluaisin kokeillä luoda sen windowsille mutta voi olla että päädyn linuxiin.
