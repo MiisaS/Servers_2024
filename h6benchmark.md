@@ -1,5 +1,5 @@
 # H6 Benchmark 
-## (tehtävän loppu osiot tehdään loppuun hieman myöhemmin. Johtuen liian myöhään ratkenneesta salt ongelmasta. Aika tulee vastaan:()
+## (tehtävän loppu osiot tehdään loppuun hieman myöhemmin. Johtuen liian myöhään ratkenneesta salt ongelmasta. Aika tulee vastaan:( )
 
 ## Lue ja tiivistä
 Windows package manager:
@@ -50,7 +50,7 @@ Linkki Nicklaksen Gittiin: https://github.com/NicklasHH/Palvelinten-hallinta/blo
 Tässä tehtävässä päästiin kokeilemaan pkg.installed toimintoa. En saanut Salt:tia toimimaan edes h5 tehtävissä, joten nämä ongelmat viivästivät tämänkin tehtävän tekoa ja syy miksi kaikkea en ehtinyt tekemään. Ongelma oli ollut kansioiden oikeuksissa ja kansio oli piilossa (hidden file). Tästä löysin kuitenkin hirveän vähän ongelman ratkasu apua(H5 tehtävässä selitetty enemmän ongelmasta ja sen ratkaisusta).
 Aloitimme varmistamalla että salt on ja toimii.
 Käytin masterina luomaani debian virtual boxia ja minionina toimi koneeni oma windows.
-<img width="651" alt="Näyttökuva 2024-05-05 212655Viimeinkinsalt" src="https://github.com/MiisaS/Servers_2024/assets/122888617/4ffa9f5b-c3af-4785-9ac8-bd2a0f8ba047">
+
 Aluksi en saanut ladattua paketteja. Tajusin kuitenkin että unohdin aloittaa tehtävän komennolla:
 ```
 salt -G 'os:windows' pkg.refresh_db #toimin minionin kautta joten oikea komento oli
