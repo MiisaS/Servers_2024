@@ -89,7 +89,7 @@ Lähde: https://kopkr.github.io/task-palhal/pages/h7.html#h7a1
 2. Linux opettelua, Jussi Pelkonen
    Työssä oli haluttu luoda useita orjia, joille asennettaisiin eri ohjelmistoja. Koen että tekijä halusi tehdä esimerkin miten voisi luoda palvelin työympäristön. Kun yksi palvelin avattiasi aukeisi automaattisesti kotisivu. Idea oli kasvanut projektin edetessä ja oli koitettu käyttää myös squiddi proxypalvelimeksi. Squid ei ole itselleni tuttu.
 
-Lisenssinä oli käytetty:-
+Lisenssinä oli käytetty: Koska linsenssiä ei ollut löytyvillä, ei lähde koodia saa hyödyntää. 
 
 Tekijä: Jussi Pelkonen, vuonna 2020. Tehtävä on tehty linux kurssille.
 
