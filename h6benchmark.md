@@ -77,7 +77,7 @@ Tässä vielä muista yrityksistä. Yritin myös ladata winrar ja sen lopputulos
 
 Projektissaan Kristian luo omanpalvelimen peliä varten. Pelinä toimii Terraria. Mielestäni aihe oli    hyvä ja hyödyllinen, koska oma palvelin tietylle ohjelmalle voi olla erittäin hyödyllinen. Tällä kertaa ohjelmana toimi peli. Koen että oma palvelin pelille mahdollistaa sen tehokkaamman ja helpomman hallinnan. Sama koskee jos asennettavana ohjelmistona olisi ollut jokin muukin.
 
-Lisenssi oli minulle vaikea löytää. Tämä johtui sivun ulkoasusta joka on hyvin siisti. Eli näkyvillä on vain Harjoitukset. (En löytänyt käytössä olevaa lisenssiä). Oletuksena on että on käytetty GNU-PL 3, koska tehtävä on tehty palvelintenhallinta kurssille, missä pääsääntöisesti ohjataan valitsemaan se lisenssiksi. Tämä kyseinen lisenssi antaa vapauden käyttää lähdekoodia omiin tarpeisiisi vapaasti.
+Lisenssi oli minulle vaikea löytää. Tämä johtui sivun ulkoasusta joka on hyvin siisti. Eli näkyvillä on vain Harjoitukset. (En löytänyt käytössä olevaa lisenssiä). Oletuksena on että on käytetty GNU-PL 3, koska tehtävä on tehty palvelintenhallinta kurssille, missä pääsääntöisesti ohjataan valitsemaan se lisenssiksi. Tämä kyseinen lisenssi antaa vapauden käyttää lähdekoodia omiin tarpeisiisi vapaasti. Koska linsenssiä ei ollut löytyvillä, ei lähde koodia saa hyödyntää.
 
 Tekijänä on toiminut Kristian Koponen ja mooduuli on tehty vuonna 2020.
 Riippuvuudet kyseiseen tehtävään on: Liux palvelin, koska Terrarian virallisilla sivuillakin olevat etäpalvelimen käyttöönottoon liittyvät ohjeet on tehty Linuxilla. Koen myös että linuxin kanssa ongelmat selviävät helpommin, koska moni käyttää sitä hallinnassa.
@@ -89,7 +89,7 @@ Lähde: https://kopkr.github.io/task-palhal/pages/h7.html#h7a1
 2. Linux opettelua, Jussi Pelkonen
    Työssä oli haluttu luoda useita orjia, joille asennettaisiin eri ohjelmistoja. Koen että tekijä halusi tehdä esimerkin miten voisi luoda palvelin työympäristön. Kun yksi palvelin avattiasi aukeisi automaattisesti kotisivu. Idea oli kasvanut projektin edetessä ja oli koitettu käyttää myös squiddi proxypalvelimeksi. Squid ei ole itselleni tuttu.
 
-Lisenssinä oli käytetty:
+Lisenssinä oli käytetty:-
 
 Tekijä: Jussi Pelkonen, vuonna 2020. Tehtävä on tehty linux kurssille.
 
@@ -100,13 +100,21 @@ Kuten Jussikin kirjotuksessaan sanoo, ei hänen ratkaisunsa ole hirväen käytä
 
 Lähde: https://pelkjus.wordpress.com/2020/05/17/tehtava-7-oma-moduli/#respond
 
-3. Työ
 
-## Testbench (kesken en ole vielä löytänyt tehtävää jonka koen pystyväni suorittaa)
+
+
+
+
+
+
+
+
 
 ## Viisi ideaa
-- Toimiva palvelin, hyödnytäen salttia.
-- Ajattelin yrittää tehdä lapsiystävällisen palvelimen
-- Oikeudet rajatut esimerkiksi. joihinkin selaimella ei saisi sivuja auki.
+- Toimiva palvelin, hyödyntäen salttia.
+- Ajattelin yrittää tehdä lapsiystävällisen linuxpalvelimen.
+- Oikeudet rajatut esimerkiksi. joihinkin selaimella ei saisi sivuja auki. (fail2ban voisi käyttää pkg.install) 
 - Jotain lapsiystävällistä sisältöä(esim piirtämiseen tarkoitettu sovellus), muuta Mitä?
 - Haluaisin kokeillä luoda sen windowsille mutta voi olla että päädyn linuxiin.
+Vinkki sivustojen bännäämiseen:
+https://www.howtogeek.com/675010/how-to-secure-your-linux-computer-with-fail2ban/
