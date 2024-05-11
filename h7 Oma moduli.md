@@ -11,7 +11,7 @@ Projekti on tehty käyttäen Oracle VM Virtual Boxia.
 Käytetyissä virtuaaliboxeissa käytetään linux ympäristöä, (Debian).
 
 ## Vaihe 1: Virtuaali koneitten luonti.
-Tehtävä aloitetaa
+Tehtävä aloitetaa lumalla 
 ## Vaihe 2: Salt master ja minion
 ## Vaihe 3: Squidin asennus
 ## Vaihe 4: Squidin konfigurointi
