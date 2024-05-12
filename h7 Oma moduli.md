@@ -159,7 +159,6 @@ https://serverfault.com/questions/946639/how-to-copy-file-from-master-to-minions
 
 ## Vaihe 6: Minion
 Aloitettiin tarkastamalla onko conf ja blacklist tiedostot varmasti siirtyneet.
-```
 
 <img width="560" alt="Näyttökuva 2024-05-12 210610siirtynytoikein" src="https://github.com/MiisaS/Servers_2024/assets/122888617/ca788beb-ef61-4ccb-b1ac-177adde7023a">
 
