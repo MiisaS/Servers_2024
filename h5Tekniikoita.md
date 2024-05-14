@@ -51,8 +51,12 @@ Tässä kuva ilmoituksesta:
 
 Ongelmanratkaisuun on hyödynnetty saltin verkkosivuja ja Teron materiaaleja.
 
+Ongelman ratkaisu löytyi. Koska kumpikaan testaamani kone ei löytäny saltin conf tiedostoja. Yritin manuaalisesti etsiä niitä koneen tiedostoista koska tiesin niiden kuuluvan programdata kansioon. Kansio on windowsilla piilotettu, ja asetuksista pystyin yksin kertaisesti laittamaan myös piilotetut kansiot näkyviin. Piilotetuista kansioista löytyi ProgramData ja etsimäni Saltin configuraatio filet. Sain avattua tiedostolle käyttöoikeudet, koska jostain syystä minulla ei niitä ennestään ollut. 
+
 Lähteet: 
 https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/windows.html#install-windows
+
 https://terokarvinen.com/2024/configuration-management-2024-spring/
+
 https://terokarvinen.com/2018/control-windows-with-salt/
 
