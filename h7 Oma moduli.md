@@ -1,4 +1,4 @@
-# Projekti: Kuinka "bännätä" verkkosivu salt minionilta.(viimeistelen vielä selityksiä laajemmiksi)
+# Projekti: Kuinka "bännätä" verkkosivu salt minionilta.(viimeistelen vielä "esitys kuntoon")
 Projektin ideana on luoda palvelin, jolta on estetty pääsy tietylle verkkosivulle. Esimerkissä käytetään verkko sivuna youtubea, joka ei sinänsä oli haitallinen verkkosivu.
 Esimerkkiä voi kuitenkin hyödyntää melkeimpä mihin vaan verkkosivuun. Vain squidille annettuja konfiguraatioita pitää muuttaa. 
 Tämä tekeekin projektista hyödyllisen sillä joskus on hyödyllistä sensuuroida tiettyjä verkkosivuja käyttäjiä
@@ -183,11 +183,15 @@ Ja aloitimme tarkistamaan löytyykö tarvittavat tiedostot. Tarkistimme ensin ko
 
 !<img width="560" alt="Näyttökuva 2024-05-12 210610siirtynytoikein" src="https://github.com/MiisaS/Servers_2024/assets/122888617/ca788beb-ef61-4ccb-b1ac-177adde7023a">
 
+Tämän jälkeen tarkistin että osoite tiedosto oli myöskin siirtynyt.
+
 !<img width="512" alt="Näyttökuva 2024-05-12 223627varmistusblacklistt002miisaprojekt" src="https://github.com/MiisaS/Servers_2024/assets/122888617/d51fa36e-28e3-444d-a1e2-a712b5226945">
+
+Kun kaikki oli siirtynyt pystyimme lähteä kokeilemaan miten käy kun yritämme hdistää youtubeen minionilta. 
 
 !<img width="611" alt="Näyttökuva 2024-05-12 215135entiiämitätapahtuumiisaprojekti888" src="https://github.com/MiisaS/Servers_2024/assets/122888617/013d43dd-8b63-48ed-bf3f-580d311c3b6d">
 
-## Vaihe 7: Mainosten blokkaus ja toinen tämä blokata tietty osoite.
+## Vaihe 7: Mainosten blokkaus joka on myöskin toinen tapa blokata tietty osoite.
 Aloitimme luomalla tiedoston johon lisäsimme bännättävät osoitteet. Tähän voit valita itse haluamasi tai hyödyntää githubista löytyvää valmista osoitelistaa. Esimerkiksi tämä lista antoi laajan valikoiman osoitteita, joita voisi olla hyödyllistä bännätä. Osoitteet olivat myös ajankohtaisia ja niitä päivitettiin aktiivisesti.
 
 https://stackoverflow.com/questions/60873775/no-matching-sls-found-for-httpd-in-env-base
@@ -196,18 +200,29 @@ https://github.com/blocklistproject/Lists
 Valitsin itselleni vain muutaman esimerkin vuoksi. Kokonaisten listojen laittaminen olisi vienyt liikaa aikaa.
 Lisäsin nämä:
 
+<img width="509" alt="Näyttökuva 2024-05-13 211935lisäsinmuutamanmiisaprojekti984384" 
+src="https://github.com/MiisaS/Servers_2024/assets/122888617/45ff9bc9-4822-40bf-b11f-500dae8a535a">
+
+![Näyttökuva 2024-05-13 212807](https://github.com/MiisaS/Servers_2024/assets/122888617/0ca8b829-1cd2-40ca-840e-e74dffa2a157)
 
 Jostain syystä en saanut luotua oikeeseen hakemistoon .sls tiedostoani, ja aikani ei riittänyt syvempään ongelman ratkaisuun. Loin siis adblocker.sls tiedoston käsin. 
 
 [Tämän](https://stackoverflow.com/questions/60873775/no-matching-sls-found-for-httpd-in-env-base) lähteen perusteella srv/salt/ on oikea paikka luoda, joten en ole varma mistä kiikastaa. Kokeilin vielä suorittaa konfiguraatiot omassa testiympäristössäni. 
 
+ <img width="373" alt="Näyttökuva 2024-05-13 220409suoritettiinscriptimuntestissä" src="https://github.com/MiisaS/Servers_2024/assets/122888617/b88e854b-3bad-414b-a5c2-2a28aa4679dd">
+
 ## Vaihe 8: Projektin kehitys
 Koska projekti suoritettiin linux ympäristössä jossa ei ollut graafista työpöytää, oli selitys lähinnä teoreettinen sillä harva hyötyy tässä näytetyistä muutoksista kotona. Jos ei muuta niin youtubeen ei saada enää configuraatioiden jälkeen yhteyttä. 
-[https://nordvpn.com/fi/blog/use-hosts-file-block-ads-malware/].
+
+Adblocker oli extra osio jota halusin myös kokeilla ja koen sen lähes kaikille hyödylliseksi. Siksi uskalsinkin suorittaa kyseiset omalle testiympäristölleni. 
+
+
 
 ### Lähteet
 * https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/
 * https://nordvpn.com/fi/blog/use-hosts-file-block-ads-malware/
 * https://www.manageengine.com/products/firewall/tech-topics/what-is-squid-proxy.html
 * https://stackoverflow.com/questions/60873775/no-matching-sls-found-for-httpd-in-env-base
-
+* https://www.makeuseof.com/how-to-remove-software-repositories-on-ubuntu/
+* https://community.spiceworks.com/t/squid-proxy-domain-blocking-issue-www/446186
+* https://terokarvinen.com/2024/configuration-management-2024-spring/
