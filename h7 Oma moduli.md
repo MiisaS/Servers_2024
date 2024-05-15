@@ -11,6 +11,8 @@ ltä. Erityisesti työympäristöissä tai lasten kanssa.
 * Projekti on tehty käyttäen Oracle VM Virtual Boxia.
 * Käytetyissä virtuaaliboxeissa käytetään linux ympäristöä, (Debian).
 * Huomitoitavaa on se että ohjeet on http verkkosivuille eikä https. Ohjeissa käsitellään myös mainosten blockaus.
+### Lisenssi: GNU General Public License v3.0
+
 ## Vaihe 1: Virtuaali koneitten luonti.
 Tehtävä aloitetaa luomalla kaksi virtuaalikonetta. Tajusin että tässä vaiheessa on hyvä hyödyntää kurssin tehtävää 2 [soittokotiin](. Loin siis 2 virtuaalikonetta käyttäen vagranttia. Vagrant oli ladattu windows 11 koneelleni. 
 Käytin ohjeena Teron kirjoittomaa ohjeta: [Two Machine Virtual Network with debian 11 and bullseye](https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/).
@@ -194,11 +196,12 @@ Kun kaikki oli siirtynyt pystyimme lähteä kokeilemaan miten käy kun yritämme
 ## Vaihe 7: Mainosten blokkaus joka on myöskin toinen tapa blokata tietty osoite.
 Aloitimme luomalla tiedoston johon lisäsimme bännättävät osoitteet. Tähän voit valita itse haluamasi tai hyödyntää githubista löytyvää valmista osoitelistaa. Esimerkiksi tämä lista antoi laajan valikoiman osoitteita, joita voisi olla hyödyllistä bännätä. Osoitteet olivat myös ajankohtaisia ja niitä päivitettiin aktiivisesti.
 
-https://stackoverflow.com/questions/60873775/no-matching-sls-found-for-httpd-in-env-base
+
 
 https://github.com/blocklistproject/Lists
+
 Valitsin itselleni vain muutaman esimerkin vuoksi. Kokonaisten listojen laittaminen olisi vienyt liikaa aikaa.
-Lisäsin nämä:
+Lisäsin [tästä](https://blocklistproject.github.io/Lists/ads.txt) listasta muutaman. 
 
 <img width="509" alt="Näyttökuva 2024-05-13 211935lisäsinmuutamanmiisaprojekti984384" 
 src="https://github.com/MiisaS/Servers_2024/assets/122888617/45ff9bc9-4822-40bf-b11f-500dae8a535a">
@@ -208,6 +211,18 @@ src="https://github.com/MiisaS/Servers_2024/assets/122888617/45ff9bc9-4822-40bf-
 Jostain syystä en saanut luotua oikeeseen hakemistoon .sls tiedostoani, ja aikani ei riittänyt syvempään ongelman ratkaisuun. Loin siis adblocker.sls tiedoston käsin. 
 
 [Tämän](https://stackoverflow.com/questions/60873775/no-matching-sls-found-for-httpd-in-env-base) lähteen perusteella srv/salt/ on oikea paikka luoda, joten en ole varma mistä kiikastaa. Kokeilin vielä suorittaa konfiguraatiot omassa testiympäristössäni. 
+
+Loin tiedoston adblocker.sls
+```
+sudo nano adblocker.sls
+```
+
+Lisäsin tiedostoon githubin listasta samat kuin aikaisemmin t001 luodulle tiedostolle.
+Suoritin scriptin komennolle:
+```
+sudo chmod +X adblocker.sls
+```
+
 
  <img width="373" alt="Näyttökuva 2024-05-13 220409suoritettiinscriptimuntestissä" src="https://github.com/MiisaS/Servers_2024/assets/122888617/b88e854b-3bad-414b-a5c2-2a28aa4679dd">
 
@@ -226,3 +241,5 @@ Adblocker oli extra osio jota halusin myös kokeilla ja koen sen lähes kaikille
 * https://www.makeuseof.com/how-to-remove-software-repositories-on-ubuntu/
 * https://community.spiceworks.com/t/squid-proxy-domain-blocking-issue-www/446186
 * https://terokarvinen.com/2024/configuration-management-2024-spring/
+* https://stackoverflow.com/questions/60873775/no-matching-sls-found-for-httpd-in-env-base
+* 
